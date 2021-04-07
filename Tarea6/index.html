@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tarea 6</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <fieldset>
+    <h1>Suscripción electrónica a nuestro boletín</h1>
+  </fieldset>
+  <div id="formulario">
+    <form action="comprobar.php" method="post">
+
+      <section id="cabeza">
+        <h4>Datos del usuario</h4>
+        <label for="nombre">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellidos:&nbsp;&nbsp;</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass">
+      </section>
+
+      <section id="radios" class="sex">
+        <label for="">
+          <h4>Sexo</h4>
+        </label>
+        <br>
+        <div style="padding-left: 31%;">
+          <input type="radio" name="sexo" id="" value="Masculino">Masculino
+          <br>
+          <input type="radio" name="sexo" id="" value="Femenino">Femenino
+        </div>
+      </section>
+      <section id="radios" class="radiosAux">
+        <label for="">
+          <h4>Nivel de estudios</h4>
+        </label>
+        <br>
+        <div style="padding-left: 10%;">
+          <input type="radio" name="nivel" value=Certificado escolar id="">Certificado escolar
+          <br>
+          <input type="radio" name="nivel" value=Graduado en E.S.O. id="">Graduado en E.S.O.
+          <br>
+          <input type="radio" name="nivel" value=Bachiller - Formación Profesional id="">Bachiller - Formación Profesional
+          <br>
+          <input type="radio" name="nivel" value=Diplomado id="">Diplomado
+          <br>
+          <input type="radio" name="nivel" value=Licenciado/Doctorado id="">Licenciado o Doctorado
+        </div>
+      </section>
+      <section id="radios" class="radiosAux">
+        <label for="">
+          <h4>Interesado en alguno de los siguientes temas</h4>
+        </label>
+        <br>
+        <div style="padding-left: 35%;">
+          <input type="radio" name="temas" id="" value="Música">Música
+          <br>
+          <input type="radio" name="temas" id="" value="Deportes">Deportes
+          <br>
+          <input type="radio" name="temas" id="" value="Cine">Cine
+          <br>
+          <input type="radio" name="temas" id="" value="Libros">Libros
+          <br>
+          <input type="radio" name="temas" id="" value="Ciencia">Ciencia
+        </div>
+      </section>
+
+      <section id="combo">
+        <label for="">Día de la semana que le interesa recibirlo:</label>
+        <br>
+        <select name="dia" id="">
+          <option value="Lunes">Lunes</option>
+          <option value="Martes">Martes</option>
+          <option value="Miercoles">Miercoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+          <option value="Sábado">Sábado</option>
+          <option value="Domingo">Domingo</option>
+        </select>
+        <br>
+        <label for="opin">Su opinión:</label>
+        <br>
+        <textarea name="opin" id="opin" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+      </section>
+    </form>
+  </div>
+
+</body>
+
+</html>

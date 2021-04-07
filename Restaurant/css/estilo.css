@@ -1,0 +1,306 @@
+/* Los valores obtenidos para los @media fueron obtenidos en:  https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* font-family: 'Kaushan Script', cursive; */
+}
+
+div.contenedor {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.fila {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: table;
+  color: white;
+}
+
+/* <!-- *************
+      SECCIÓN 1
+    *************   --> */
+header #logo {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+  width: 40%;
+  margin-bottom: 20px;
+  text-shadow: -5px -2px 1px black;
+}
+
+header img#logo {
+  width: 60px;
+  height: 60px;
+}
+
+header center p {
+  text-align: center;
+  width: 42px;
+  border-radius: 100%;
+  color: white;
+}
+
+#redes {
+  margin-top: 30px;
+  float: right;
+}
+
+img#face, img#whats, img#youtube {
+  width: 45px;
+  height: 45px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* <!-- *************
+      SECCIÓN 2
+    *************   --> */
+nav {
+  background: black;
+}
+
+nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li a, #submit {
+  font-family: 'Kaushan Script', cursive;
+  border: none;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  background: black;
+  opacity: 0.9;
+}
+
+nav ul li a:hover, #submit:hover {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: #055353 !important;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:active {
+  background: #022A2A;
+  color: #022A2A;
+}
+
+/* <!-- *************
+      SECCIÓN 3
+    *************   --> */
+#seccion3 center {
+  background: black;
+  opacity: 0.9;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+#seccion3 img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+#seccion3 h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
+  padding: 10px;
+}
+
+#seccion3 p {
+  padding: 10px;
+}
+
+/* <!-- *************
+      RESERVAR
+    *************   --> */
+form{
+  text-align: center;
+  font-size: 20px;
+}
+
+form input[type="radio"]{
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+form input[type="text"],form input[type="email"],form input[type="number"],form input[type="date"]{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* <!-- *************
+      SECCIÓN 4
+    *************   --> */
+#seccion4 aside ul li {
+  background: #aaa;
+  padding: 10px;
+  margin: 2px 10px;
+  list-style: square;
+  list-style-position: inside;
+  list-style-image: url(../img/tachuela.png);
+}
+
+article {
+  background: black;
+  opacity: 0.9;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+#seccion4 article p img {
+  float: left;
+  margin-right: 20px;
+}
+
+#seccion4 article p {
+  margin: 5px 20px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+#seccion4 aside#der h1 {
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+  background: black;
+  opacity: 0.9;
+  border-radius: 6px;
+}
+
+#seccion4 aside#der input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#seccion4 aside#der input:hover {
+  background: black;
+  opacity: 0.9;
+}
+
+#der {
+  margin-left: 400px;
+}
+
+#seccion4 aside#der input[type="text"] {
+  text-align: center;
+  color: white;
+  background: url(../img/usuario.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+#seccion4 aside#der input[type="text"]:hover {
+  background: black;
+  color: white;
+}
+
+#seccion4 aside#der input[type="email"] {
+  text-align: center;
+  background: url(../img/email.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+#seccion4 aside#der input[type="email"]:hover {
+  background: black;
+  color: white;
+}
+
+/* <!-- *************
+      SECCIÓN 4
+    *************   --> */
+footer div {
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+
+/**********************************************
+***Pantalla de escritorio GRANDE- LARGE (lg)***
+**********************************************/
+@media (min-width:1200px) {
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  .col-lg-10 {
+    width: 100%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-7 {
+    width: 58.3333333%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  .col-lg-0 {
+    display: none;
+  }
+
+  #seccion4 article p img {
+    width: 50%;
+  }
+}
